@@ -1,0 +1,36 @@
+title: "Stephen King At Work"
+description: "Vincent Neyt, University of Antwerp"
+
+# Change to the final address (e.g. https://username.github.io or your own domain)
+url: "https://vneyt.github.io"
+baseurl: "/stephenkingatwork"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Keep the old WordPress URL structure: /2022/07/01/post-title/
+permalink: /:year/:month/:day/:title/
+
+# Home page shows each post up to the <!--more--> marker
+excerpt_separator: "<!--more-->"
+show_excerpts: true
+
+# Lets Markdown (images, italics) work inside <figure> and <figcaption>
+kramdown:
+  parse_block_html: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
